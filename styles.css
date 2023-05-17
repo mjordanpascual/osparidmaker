@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#imgBgk {
+    position: relative;
+    top: 10%;
+    z-index: 1;
+}
+
+#id-firstname {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    margin-top: -35px;
+    text-align: center;
+}
+
+#id-firstname h2 {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#id-lastname {
+    position: absolute;
+    top: 455px;
+    width: 100%;
+    text-align: center;
+}
+
+#id-lastname h2 {
+    font-weight: bolder;
+    font-size: 31px;
+}
+
+#id-item {
+    position: absolute;
+    top: 495px;
+    width: 100%;
+    text-align: center;
+}
+
+#id-item h2 {
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+#id-department {
+    position: absolute;
+    top: 520px;
+    width: 100%;
+    text-align: center;
+}
+
+#id-department h2 {
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+#id-signatory {
+    position: absolute;
+    top: 610px;
+    width: 100%;
+    text-align: center;
+}
+
+#id-signatory h2 {
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+#id-esig {
+    position: absolute;
+    top: 575px;
+    width: 100%;
+    text-align: center;
+}
+
+#id-esig img {
+    width: 60%;
+}
+
+#id-position {
+    position: absolute;
+    top: 632px;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#idTemplate {
+    /* display: flex; */
+    /* position: absolute; */
+    /* justify-content: center; */
+}
+
+#idTemplate img {
+    /* position: absolute; */
+    height: 100%;
+    width: 55%;
+}
+
+#app {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    height: 170px;
+    width: 170px;
+    margin-top: 295px;
+    margin-left: 580px;
+    border: 1px solid black;
+    /* object-fit: cover; */
+    z-index: 2;
+}
+
