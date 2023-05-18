@@ -9,23 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="./styles.css">
 
     <title>Ospar ID</title>
 </head>
 <body>
-    <div class="container-fluid bg-success text-white text-center p-3">
+    <div class="container-fluid bg-success text-white text-center p-3" id="heading">
         <div class="row">
             <div class="col">
                 <h4>OSPITAL NG PARAÑAQUE - ID</h4>
             </div>
         </div>
     </div>
-    <div class="container text-center mt-3" id="idForm">
+    <!-- <div class="container text-center mt-3" id="idForm">
         <div class="row">
             <div class="col">
                 <form class="jumbotron w-50 mt-0 p-4 ml-auto mr-auto">
@@ -50,25 +50,37 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
     <hr>
-    <div class="container text-center">
+    <div class="container text-center" id="fileUpload">
         <div class="row">
             <div class="col">
                 <form id="upload" class="btn btn-primary">
                     <input type="file" id="file" accept="image/*">
                     <button class="btn btn-success text-dark">Upload</button>
                 </form>    
-                <div id="app"></div>
+                <div class="container mt-3">
+                    <span class="float-end pt-2">
+                        <button type="button" onclick="generatePDF()" class="btn-sm btn-danger pull-right">Export to PDF</button>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
+    <div id="app"></div>
+
     <hr>
+    
     <div class="container text-center" id="idTemplate">
         <div class="row">
             <div class="col">
-                <div class="text-center">
-                    <img src="./img/idBackgroundv2.jpg" alt="">
+                <div class="text-center" id="img_1">
+                    <img src="./img/idBackgroundv3.png" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center" id="img_1">
+                    <img src="./img/idBackgroundv3.png" alt="">
                 </div>
             </div>
         </div>
@@ -83,5 +95,11 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-html2pdf@1.1.4/lib/html2pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    
 </body>
 </html>

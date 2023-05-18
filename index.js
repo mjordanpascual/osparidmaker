@@ -40,3 +40,22 @@
 
 		// Listen for submit events
 		form.addEventListener('submit', handleSubmit);
+
+
+function generatePDF() {
+
+    // Choose the element id which you want to export.
+    var element = document.getElementById('idTemplate');
+    // element.style.width = '700px';
+    // element.style.height = '900px';
+    var opt = {
+        margin:       0.5,
+        filename:     'myfile.pdf',
+        image:        { type: 'jpeg', quality: 1 },
+        html2canvas:  { scale: 0.5 },
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait',precision: '12' }
+        };
+    
+    // choose the element and pass it to html2pdf() function and call the save() on it to save as pdf.
+    html2pdf().set(opt).from(element).save();
+    }
